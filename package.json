@@ -1,0 +1,8 @@
+{
+  "name": "aerogear-mobile-metrics-api-data-generator",
+  "version": "1.0.0",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "request-promise": "2.0.1"
+  }
+}
