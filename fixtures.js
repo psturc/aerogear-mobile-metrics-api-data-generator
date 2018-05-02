@@ -31,7 +31,7 @@ function initEventStream(listener) {
             const platform = PLATFORMS[Math.floor(random() * PLATFORMS.length)];
             listener({
                     clientId: CLIENT_IDS[platform][Math.floor(random() * CLIENT_IDS[platform].length)],
-                    eventType: "init",
+                    type: "init",
                     data: {
                         app: {
                             appId: APP_IDS[Math.floor(random() * APP_IDS.length)],
@@ -67,7 +67,7 @@ function securityEventStream(listener) {
             }
             listener({
                     clientId: CLIENT_IDS[platform][Math.floor(random() * CLIENT_IDS[platform].length)],
-                    eventType: "security",
+                    type: "security",
                     data: {
                         app: {
                             appId: APP_IDS[Math.floor(random() * APP_IDS.length)],
